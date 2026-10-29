@@ -1,0 +1,97 @@
+
+# ==========================================
+# QUANTUM AI AGENTS - GITIGNORE
+# ==========================================
+
+# Python - Cache y archivos compilados
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+ENV/
+
+# Variables de entorno y credenciales
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets.json
+credentials.json
+
+# AWS
+.aws/
+.aws-sam/
+.cdk.out/
+samconfig.local.toml
+
+# Entornos de desarrollo
+.vscode/
+.venv/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Pytest y cobertura
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+.pyright/
+
+# Empaquetado Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Modelos de IA y checkpoints
+*.gguf
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.onnx
+checkpoints/
+model_cache/
+
+# Logs y archivos temporales
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+*.bak
+
+# Resultados experimentales generados
+outputs/circuits/*
+outputs/experiments/*
+outputs/reports/*
+
+# Conservar estructura de outputs
+!outputs/circuits/.gitkeep
+!outputs/experiments/.gitkeep
+!outputs/reports/.gitkeep
+
+# Reportes de profiling
+*.prof
+*.pstats
+
+# Archivos locales de configuración
+configs/*local.yaml
+configs/*local.json
